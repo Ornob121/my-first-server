@@ -4,6 +4,7 @@ const phones = require("./phones.json");
 const app = express();
 const port = 5000;
 
+// ! app.use(cors()) is used to give the localhost port access so it can fetch; here require is like export
 app.use(cors());
 
 app.get("/", (req, res) => {
